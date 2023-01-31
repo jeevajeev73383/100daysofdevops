@@ -1,0 +1,696 @@
+Microsoft Windows [Version 10.0.19045.2486]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>cd ~
+The system cannot find the path specified.
+
+C:\WINDOWS\system32>@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+WARNING: 'choco' was found at 'C:\ProgramData\chocolatey\bin\choco.exe'.
+WARNING: An existing Chocolatey installation was detected. Installation will not continue.
+For security reasons, this script will not overwrite existing installations.
+
+Please use choco upgrade chocolatey to handle upgrades of Chocolatey itself.
+If the existing installation is not functional or a prior installation did not complete, follow these steps:
+ - Backup the files at the path listed above so you can restore your previous installation if needed
+ - Remove the existing installation manually
+ - Rerun this installation script
+ - Reinstall any packages previously installed, if needed (refer to the lib folder in the backup)
+
+Once installation is completed, the backup folder is no longer needed and can be deleted.
+
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>choco install -y wget nano notepad2
+Chocolatey v1.2.1
+Installing the following packages:
+wget;nano;notepad2
+By installing, you accept licenses for the packages.
+Progress: Downloading Wget 1.21.3... 100%
+
+Wget v1.21.3 [Approved]
+wget package files install completed. Performing other installation steps.
+Getting x64 bit zip
+Extracting C:\ProgramData\chocolatey\lib\Wget\tools\wget-1.21.3-win64_x64.zip to C:\ProgramData\chocolatey\lib\Wget\tools...
+C:\ProgramData\chocolatey\lib\Wget\tools
+ ShimGen has successfully created a shim for wget.exe
+ The install of wget was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\Wget\tools'
+nano v7.1.13 already installed.
+ Use --force to reinstall, specify a version to install, or try upgrade.
+notepad2 v4.2.25.20160422 already installed.
+ Use --force to reinstall, specify a version to install, or try upgrade.
+
+Chocolatey installed 1/3 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Warnings:
+ - notepad2 - notepad2 v4.2.25.20160422 already installed.
+ Use --force to reinstall, specify a version to install, or try upgrade.
+ - nano - nano v7.1.13 already installed.
+ Use --force to reinstall, specify a version to install, or try upgrade.
+
+Enjoy using Chocolatey? Explore more amazing features to take your
+experience to the next level at
+ https://chocolatey.org/compare
+
+C:\WINDOWS\system32>choco install -y consolez cmder conemu
+Chocolatey v1.2.1
+Installing the following packages:
+consolez;cmder;conemu
+By installing, you accept licenses for the packages.
+Progress: Downloading ConsoleZ 1.19.0.19104... 100%
+
+ConsoleZ v1.19.0.19104 [Approved]
+consolez package files install completed. Performing other installation steps.
+Downloading ConsoleZ 64 bit
+  from 'https://github.com/cbucher/console/releases/download/1.19.0/ConsoleZ.x64.1.19.0.19104.zip'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\ConsoleZ\1.19.0.19104\ConsoleZ.x64.1.19.0.19104.zip (2.72 MB).
+Download of ConsoleZ.x64.1.19.0.19104.zip (2.72 MB) completed.
+Hashes match.
+Extracting C:\Users\DELL\AppData\Local\Temp\chocolatey\ConsoleZ\1.19.0.19104\ConsoleZ.x64.1.19.0.19104.zip to C:\ProgramData\chocolatey\lib\ConsoleZ\tools...
+C:\ProgramData\chocolatey\lib\ConsoleZ\tools
+ ShimGen has successfully created a gui shim for Console.exe
+ The install of consolez was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\ConsoleZ\tools'
+Progress: Downloading vcredist2010 10.0.40219.32503... 100%
+Progress: Downloading Cmder 1.3.20... 100%
+
+vcredist2010 v10.0.40219.32503 [Approved]
+vcredist2010 package files install completed. Performing other installation steps.
+Downloading vcredist2010 64 bit
+  from 'https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\vcredist2010\10.0.40219.32503\vcredist_x64.exe (9.8 MB).
+Download of vcredist_x64.exe (9.8 MB) completed.
+Hashes match.
+Installing vcredist2010...
+vcredist2010 has been installed.
+Downloading vcredist2010 32 bit
+  from 'https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x86.exe'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\vcredist2010\10.0.40219.32503\vcredist_x86.exe (8.58 MB).
+Download of vcredist_x86.exe (8.58 MB) completed.
+Hashes match.
+Installing vcredist2010...
+vcredist2010 has been installed.
+  vcredist2010 may be able to be automatically uninstalled.
+ The install of vcredist2010 was successful.
+  Software installed as 'exe', install location is likely default.
+
+Cmder v1.3.20 [Approved]
+cmder package files install completed. Performing other installation steps.
+Extracting C:\ProgramData\chocolatey\lib\Cmder\tools\cmder.7z to C:\tools\Cmder...
+C:\tools\Cmder
+PATH environment variable does not have C:\tools\Cmder in it. Adding...
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+ see the changes (or in powershell/cmd.exe just type `refreshenv`).
+ The install of cmder was successful.
+  Software installed to 'C:\tools\Cmder'
+Progress: Downloading ConEmu 22.12.18.0... 100%
+
+ConEmu v22.12.18.0 [Approved]
+conemu package files install completed. Performing other installation steps.
+Downloading ConEmu 64 bit
+  from 'https://github.com/Maximus5/ConEmu/releases/download/v22.12.18/ConEmuSetup.221218.exe'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\ConEmu\22.12.18.0\ConEmuSetup.221218.exe (7.6 MB).
+Download of ConEmuSetup.221218.exe (7.6 MB) completed.
+Hashes match.
+Installing ConEmu...
+ConEmu has been installed.
+  conemu may be able to be automatically uninstalled.
+ The install of conemu was successful.
+  Software installed as 'exe', install location is likely default.
+
+Chocolatey installed 4/4 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>choco install -y virtualbox
+Chocolatey v1.2.1
+Installing the following packages:
+virtualbox
+By installing, you accept licenses for the packages.
+Progress: Downloading chocolatey-core.extension 1.4.0... 100%
+Progress: Downloading chocolatey-compatibility.extension 1.0.0... 100%
+Progress: Downloading virtualbox 7.0.6... 100%
+Progress: Downloading vcredist140 14.34.31931... 100%
+Progress: Downloading KB3033929 1.0.5... 100%
+Progress: Downloading chocolatey-windowsupdate.extension 1.0.5... 100%
+Progress: Downloading KB3035131 1.0.3... 100%
+Progress: Downloading KB2919355 1.0.20160915... 100%
+Progress: Downloading KB2919442 1.0.20160915... 100%
+Progress: Downloading KB2999226 1.0.20181019... 100%
+
+chocolatey-compatibility.extension v1.0.0 [Approved]
+chocolatey-compatibility.extension package files install completed. Performing other installation steps.
+ Installed/updated chocolatey-compatibility extensions.
+ The install of chocolatey-compatibility.extension was successful.
+  Software installed to 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility'
+
+chocolatey-core.extension v1.4.0 [Approved]
+chocolatey-core.extension package files install completed. Performing other installation steps.
+ Installed/updated chocolatey-core extensions.
+ The install of chocolatey-core.extension was successful.
+  Software installed to 'C:\ProgramData\chocolatey\extensions\chocolatey-core'
+
+chocolatey-windowsupdate.extension v1.0.5 [Approved]
+chocolatey-windowsupdate.extension package files install completed. Performing other installation steps.
+ Installed/updated chocolatey-windowsupdate extensions.
+ The install of chocolatey-windowsupdate.extension was successful.
+  Software installed to 'C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate'
+
+KB3035131 v1.0.3 [Approved]
+kb3035131 package files install completed. Performing other installation steps.
+Skipping installation because update KB3035131 does not apply to this operating system (Microsoft Windows 10 Pro).
+ The install of kb3035131 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+KB3033929 v1.0.5 [Approved]
+kb3033929 package files install completed. Performing other installation steps.
+Skipping installation because update KB3033929 does not apply to this operating system (Microsoft Windows 10 Pro).
+ The install of kb3033929 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+KB2919442 v1.0.20160915 [Approved]
+kb2919442 package files install completed. Performing other installation steps.
+Skipping installation because this hotfix only applies to Windows 8.1 and Windows Server 2012 R2.
+ The install of kb2919442 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+KB2919355 v1.0.20160915 [Approved]
+kb2919355 package files install completed. Performing other installation steps.
+Skipping installation because this hotfix only applies to Windows 8.1 and Windows Server 2012 R2.
+ The install of kb2919355 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+KB2999226 v1.0.20181019 [Approved] - Possibly broken
+kb2999226 package files install completed. Performing other installation steps.
+Skipping installation because update KB2999226 does not apply to this operating system (Microsoft Windows 10 Pro).
+ The install of kb2999226 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+vcredist140 v14.34.31931 [Approved]
+vcredist140 package files install completed. Performing other installation steps.
+Downloading vcredist140-x86
+  from 'https://download.visualstudio.microsoft.com/download/pr/6a4c74cd-8ee0-4757-9620-a11a5b48b1a7/CE4843A946EE3732EB2BFC098DB5741DC5495C7BEA204E11D379336DCC68E875/VC_redist.x86.exe'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\vcredist140\14.34.31931\VC_redist.x86.exe (13.19 MB).
+Download of VC_redist.x86.exe (13.19 MB) completed.
+Hashes match.
+Installing vcredist140-x86...
+vcredist140-x86 has been installed.
+Downloading vcredist140-x64 64 bit
+  from 'https://download.visualstudio.microsoft.com/download/pr/bcb0cef1-f8cb-4311-8a5c-650a5b694eab/2257B3FBE3C7559DE8B31170155A433FAF5B83829E67C589D5674FF086B868B9/VC_redist.x64.exe'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\vcredist140\14.34.31931\VC_redist.x64.exe (24.29 MB).
+Download of VC_redist.x64.exe (24.29 MB) completed.
+Hashes match.
+Installing vcredist140-x64...
+vcredist140-x64 has been installed.
+  vcredist140 may be able to be automatically uninstalled.
+ The install of vcredist140 was successful.
+  Software installed as 'exe', install location is likely default.
+
+virtualbox v7.0.6 [Approved]
+virtualbox package files install completed. Performing other installation steps.
+#< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Preparing modules for first use.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Preparing modules for first use.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="debug">Host version is 5.1.19041.2364, PowerShell Version is '5.1.19041.2364' and CLR Version is '4.0.30319.42000'.</S><S S="verbose">Exporting function 'Format-FileSize'.</S><S S="verbose">Exporting function 'Get-ChecksumValid'.</S><S S="verbose">Exporting function 'Get-ChocolateyPath'.</S><S S="verbose">Exporting function 'Get-ChocolateyUnzip'.</S><S S="verbose">Exporting function 'Get-ChocolateyWebFile'.</S><S S="verbose">Exporting function 'Get-EnvironmentVariable'.</S><S S="verbose">Exporting function 'Get-EnvironmentVariableNames'.</S><S S="verbose">Exporting function 'Get-FtpFile'.</S><S S="verbose">Exporting function 'Get-OSArchitectureWidth'.</S><S S="verbose">Exporting function 'Get-PackageParameters'.</S><S S="verbose">Exporting function 'Get-PackageParametersBuiltIn'.</S><S S="verbose">Exporting function 'Get-ToolsLocation'.</S><S S="verbose">Exporting function 'Get-UACEnabled'.</S><S S="verbose">Exporting function 'Get-UninstallRegistryKey'.</S><S S="verbose">Exporting function 'Get-VirusCheckValid'.</S><S S="verbose">Exporting function 'Get-WebFile'.</S><S S="verbose">Exporting function 'Get-WebFileName'.</S><S S="verbose">Exporting function 'Get-WebHeaders'.</S><S S="verbose">Exporting function 'Install-BinFile'.</S><S S="verbose">Exporting function 'Install-ChocolateyEnvironmentVariable'.</S><S S="verbose">Exporting function 'Install-ChocolateyExplorerMenuItem'.</S><S S="verbose">Exporting function 'Install-ChocolateyFileAssociation'.</S><S S="verbose">Exporting function 'Install-ChocolateyInstallPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyPath'.</S><S S="verbose">Exporting function 'Install-ChocolateyPinnedTaskBarItem'.</S><S S="verbose">Exporting function 'Install-ChocolateyPowershellCommand'.</S><S S="verbose">Exporting function 'Install-ChocolateyShortcut'.</S><S S="verbose">Exporting function 'Install-ChocolateyVsixPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyZipPackage'.</S><S S="verbose">Exporting function 'Install-Vsix'.</S><S S="verbose">Exporting function 'Set-EnvironmentVariable'.</S><S S="verbose">Exporting function 'Set-PowerShellExitCode'.</S><S S="verbose">Exporting function 'Start-ChocolateyProcessAsAdmin'.</S><S S="verbose">Exporting function 'Test-ProcessAdminRights'.</S><S S="verbose">Exporting function 'Uninstall-BinFile'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyEnvironmentVariable'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyPackage'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyZipPackage'.</S><S S="verbose">Exporting function 'Update-SessionEnvironment'.</S><S S="verbose">Exporting function 'Write-FunctionCallLogMessage'.</S><S S="verbose">Exporting alias 'Get-ProcessorBits'.</S><S S="verbose">Exporting alias 'Get-OSBitness'.</S><S S="verbose">Exporting alias 'Get-InstallRegistryKey'.</S><S S="verbose">Exporting alias 'Generate-BinFile'.</S><S S="verbose">Exporting alias 'Add-BinFile'.</S><S S="verbose">Exporting alias 'Start-ChocolateyProcess'.</S><S S="verbose">Exporting alias 'Invoke-ChocolateyProcess'.</S><S S="verbose">Exporting alias 'Remove-BinFile'.</S><S S="verbose">Exporting alias 'refreshenv'.</S><S S="debug">Loading community extensions</S><S S="debug">Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility\chocolatey-compatibility.psm1'</S><S S="verbose">Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility\chocolatey-compatibility.psm1'.</S><S S="debug">Function 'Get-PackageParameters' exists, ignoring export.</S><S S="debug">Function 'Get-UninstallRegistryKey' exists, ignoring export.</S><S S="debug">Exporting function 'Install-ChocolateyDesktopLink' for backwards compatibility</S><S S="verbose">Exporting function 'Install-ChocolateyDesktopLink'.</S><S S="debug">Exporting function 'Write-ChocolateyFailure' for backwards compatibility</S><S S="verbose">Exporting function 'Write-ChocolateyFailure'.</S><S S="debug">Exporting function 'Write-ChocolateySuccess' for backwards compatibility</S><S S="verbose">Exporting function 'Write-ChocolateySuccess'.</S><S S="debug">Exporting function 'Write-FileUpdateLog' for backwards compatibility</S><S S="verbose">Exporting function 'Write-FileUpdateLog'.</S><S S="verbose">Importing function 'Install-ChocolateyDesktopLink'.</S><S S="verbose">Importing function 'Write-ChocolateyFailure'.</S><S S="verbose">Importing function 'Write-ChocolateySuccess'.</S><S S="verbose">Importing function 'Write-FileUpdateLog'.</S><S S="debug">Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-core\chocolatey-core.psm1'</S><S S="verbose">Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-core\chocolatey-core.psm1'.</S><S S="verbose">Exporting function 'Get-AppInstallLocation'.</S><S S="verbose">Exporting function 'Get-AvailableDriveLetter'.</S><S S="verbose">Exporting function 'Get-EffectiveProxy'.</S><S S="verbose">Exporting function 'Get-PackageCacheLocation'.</S><S S="verbose">Exporting function 'Get-WebContent'.</S><S S="verbose">Exporting function 'Register-Application'.</S><S S="verbose">Exporting function 'Remove-Process'.</S><S S="verbose">Importing function 'Get-AppInstallLocation'.</S><S S="verbose">Importing function 'Get-AvailableDriveLetter'.</S><S S="verbose">Importing function 'Get-EffectiveProxy'.</S><S S="verbose">Importing function 'Get-PackageCacheLocation'.</S><S S="verbose">Importing function 'Get-WebContent'.</S><S S="verbose">Importing function 'Register-Application'.</S><S S="verbose">Importing function 'Remove-Process'.</S><S S="debug">Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate\chocolatey-windowsupdate.psm1'</S><S S="verbose">Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate\chocolatey-windowsupdate.psm1'.</S><S S="verbose">Exporting function 'Install-WindowsUpdate'.</S><S S="verbose">Exporting function 'Test-WindowsUpdate'.</S><S S="verbose">Importing function 'Install-WindowsUpdate'.</S><S S="verbose">Importing function 'Test-WindowsUpdate'.</S><S S="verbose">Exporting function 'Format-FileSize'.</S><S S="verbose">Exporting function 'Get-ChecksumValid'.</S><S S="verbose">Exporting function 'Get-ChocolateyPath'.</S><S S="verbose">Exporting function 'Get-ChocolateyUnzip'.</S><S S="verbose">Exporting function 'Get-ChocolateyWebFile'.</S><S S="verbose">Exporting function 'Get-EnvironmentVariable'.</S><S S="verbose">Exporting function 'Get-EnvironmentVariableNames'.</S><S S="verbose">Exporting function 'Get-FtpFile'.</S><S S="verbose">Exporting function 'Get-OSArchitectureWidth'.</S><S S="verbose">Exporting function 'Get-PackageParameters'.</S><S S="verbose">Exporting function 'Get-PackageParametersBuiltIn'.</S><S S="verbose">Exporting function 'Get-ToolsLocation'.</S><S S="verbose">Exporting function 'Get-UACEnabled'.</S><S S="verbose">Exporting function 'Get-UninstallRegistryKey'.</S><S S="verbose">Exporting function 'Get-VirusCheckValid'.</S><S S="verbose">Exporting function 'Get-WebFile'.</S><S S="verbose">Exporting function 'Get-WebFileName'.</S><S S="verbose">Exporting function 'Get-WebHeaders'.</S><S S="verbose">Exporting function 'Install-BinFile'.</S><S S="verbose">Exporting function 'Install-ChocolateyEnvironmentVariable'.</S><S S="verbose">Exporting function 'Install-ChocolateyExplorerMenuItem'.</S><S S="verbose">Exporting function 'Install-ChocolateyFileAssociation'.</S><S S="verbose">Exporting function 'Install-ChocolateyInstallPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyPath'.</S><S S="verbose">Exporting function 'Install-ChocolateyPinnedTaskBarItem'.</S><S S="verbose">Exporting function 'Install-ChocolateyPowershellCommand'.</S><S S="verbose">Exporting function 'Install-ChocolateyShortcut'.</S><S S="verbose">Exporting function 'Install-ChocolateyVsixPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyZipPackage'.</S><S S="verbose">Exporting function 'Install-Vsix'.</S><S S="verbose">Exporting function 'Set-EnvironmentVariable'.</S><S S="verbose">Exporting function 'Set-PowerShellExitCode'.</S><S S="verbose">Exporting function 'Start-ChocolateyProcessAsAdmin'.</S><S S="verbose">Exporting function 'Test-ProcessAdminRights'.</S><S S="verbose">Exporting function 'Uninstall-BinFile'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyEnvironmentVariable'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyPackage'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyZipPackage'.</S><S S="verbose">Exporting function 'Update-SessionEnvironment'.</S><S S="verbose">Exporting function 'Write-FunctionCallLogMessage'.</S><S S="verbose">Exporting function 'Install-ChocolateyDesktopLink'.</S><S S="verbose">Exporting function 'Write-ChocolateyFailure'.</S><S S="verbose">Exporting function 'Write-ChocolateySuccess'.</S><S S="verbose">Exporting function 'Write-FileUpdateLog'.</S><S S="verbose">Exporting function 'Get-AppInstallLocation'.</S><S S="verbose">Exporting function 'Get-AvailableDriveLetter'.</S><S S="verbose">Exporting function 'Get-EffectiveProxy'.</S><S S="verbose">Exporting function 'Get-PackageCacheLocation'.</S><S S="verbose">Exporting function 'Get-WebContent'.</S><S S="verbose">Exporting function 'Register-Application'.</S><S S="verbose">Exporting function 'Remove-Process'.</S><S S="verbose">Exporting function 'Install-WindowsUpdate'.</S><S S="verbose">Exporting function 'Test-WindowsUpdate'.</S><S S="verbose">Exporting alias 'Get-ProcessorBits'.</S><S S="verbose">Exporting alias 'Get-OSBitness'.</S><S S="verbose">Exporting alias 'Get-InstallRegistryKey'.</S><S S="verbose">Exporting alias 'Generate-BinFile'.</S><S S="verbose">Exporting alias 'Add-BinFile'.</S><S S="verbose">Exporting alias 'Start-ChocolateyProcess'.</S><S S="verbose">Exporting alias 'Invoke-ChocolateyProcess'.</S><S S="verbose">Exporting alias 'Remove-BinFile'.</S><S S="verbose">Exporting alias 'refreshenv'.</S></Objs>
+0
+Downloading virtualbox 64 bit
+  from 'https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6-155176-Win.exe'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\virtualbox\7.0.6\VirtualBox-7.0.6-155176-Win.exe (105.34 MB).
+Download of VirtualBox-7.0.6-155176-Win.exe (105.34 MB) completed.
+Hashes match.
+Installing virtualbox...
+virtualbox has been installed.
+Adding to PATH if needed
+PATH environment variable does not have C:\Program Files\Oracle\VirtualBox in it. Adding...
+virtualbox installed to 'C:\Program Files\Oracle\VirtualBox'
+virtualbox registered as vbox
+Only an exit code of non-zero will fail the package by default. Set
+ `--failonstderr` if you want error messages to also fail a script. See
+ `choco -h` for details.
+  virtualbox may be able to be automatically uninstalled.
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+ see the changes (or in powershell/cmd.exe just type `refreshenv`).
+ The install of virtualbox was successful.
+  Software installed as 'EXE', install location is likely default.
+
+Chocolatey installed 10/10 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Installed:
+ - kb2919355 v1.0.20160915
+ - kb3033929 v1.0.5
+ - chocolatey-core.extension v1.4.0
+ - kb2999226 v1.0.20181019
+ - kb2919442 v1.0.20160915
+ - vcredist140 v14.34.31931
+ - chocolatey-compatibility.extension v1.0.0
+ - kb3035131 v1.0.3
+ - virtualbox v7.0.6
+ - chocolatey-windowsupdate.extension v1.0.5
+
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>
+C:\WINDOWS\system32>choco install -y vagrant
+Chocolatey v1.2.1
+Installing the following packages:
+vagrant
+By installing, you accept licenses for the packages.
+Progress: Downloading vagrant 2.3.4... 100%
+
+vagrant v2.3.4 [Approved]
+vagrant package files install completed. Performing other installation steps.
+Downloading vagrant 64 bit
+  from 'https://releases.hashicorp.com/vagrant/2.3.4/vagrant_2.3.4_windows_amd64.msi'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\vagrant\2.3.4\vagrant_2.3.4_windows_amd64.msi (249.57 MB).
+Download of vagrant_2.3.4_windows_amd64.msi (249.57 MB) completed.
+Hashes match.
+Installing vagrant...
+vagrant has been installed.
+Updating installed plugins...
+All plugins are up to date.
+Repairing currently installed global plugins. This may take a few minutes...
+Installed plugins successfully repaired!
+  vagrant may be able to be automatically uninstalled.
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+ see the changes (or in powershell/cmd.exe just type `refreshenv`).
+ The install of vagrant was successful.
+  Software installed as 'msi', install location is likely default.
+
+Chocolatey installed 1/1 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Packages requiring reboot:
+ - vagrant (exit code 3010)
+
+The recent package changes indicate a reboot is necessary.
+ Please reboot at your earliest convenience.
+
+Did you know the proceeds of Pro (and some proceeds from other
+ licensed editions) go into bettering the community infrastructure?
+ Your support ensures an active community, keeps Chocolatey tip-top,
+ plus it nets you some awesome features!
+ https://chocolatey.org/compare
+
+C:\WINDOWS\system32>choco install -y vscode
+Chocolatey v1.2.1
+Installing the following packages:
+vscode
+By installing, you accept licenses for the packages.
+Progress: Downloading vscode.install 1.74.3... 100%
+Progress: Downloading DotNet4.5.2 4.5.2.20140902... 100%
+Progress: Downloading vscode 1.74.3... 100%
+
+DotNet4.5.2 v4.5.2.20140902 [Approved]
+dotnet4.5.2 package files install completed. Performing other installation steps.
+Microsoft .Net 4.5.2 Framework is already installed on your machine.
+ The install of dotnet4.5.2 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+vscode.install v1.74.3 [Approved]
+vscode.install package files install completed. Performing other installation steps.
+WARNING: No registry key found based on  'Microsoft Visual Studio Code'
+Merge Tasks: !runCode, desktopicon, quicklaunchicon, addcontextmenufiles, addcontextmenufolders, associatewithfiles, addtopath
+Downloading vscode.install 64 bit
+  from 'https://az764295.vo.msecnd.net/stable/97dec172d3256f8ca4bfb2143f3f76b503ca0534/VSCodeSetup-x64-1.74.3.exe'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\vscode.install\1.74.3\VSCodeSetup-x64-1.74.3.exe (88.76 MB).
+Download of VSCodeSetup-x64-1.74.3.exe (88.76 MB) completed.
+Hashes match.
+Installing vscode.install...
+vscode.install has been installed.
+  vscode.install can be automatically uninstalled.
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+ see the changes (or in powershell/cmd.exe just type `refreshenv`).
+ The install of vscode.install was successful.
+  Software installed to 'C:\Program Files\Microsoft VS Code\'
+
+vscode v1.74.3 [Approved]
+vscode package files install completed. Performing other installation steps.
+ The install of vscode was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\vscode'
+
+Chocolatey installed 3/3 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+C:\WINDOWS\system32>choco install -y git --params "/GitAndUnixToolsOnPath /WindowsTerminal"
+Chocolatey v1.2.1
+Installing the following packages:
+git
+By installing, you accept licenses for the packages.
+Progress: Downloading git.install 2.39.1... 100%
+Progress: Downloading git 2.39.1... 100%
+
+git.install v2.39.1 [Approved]
+git.install package files install completed. Performing other installation steps.
+Using Git LFS
+Installing 64-bit git.install...
+git.install has been installed.
+git.install installed to 'C:\Program Files\Git'
+  git.install can be automatically uninstalled.
+Environment Vars (like PATH) have changed. Close/reopen your shell to
+ see the changes (or in powershell/cmd.exe just type `refreshenv`).
+ The install of git.install was successful.
+  Software installed to 'C:\Program Files\Git\'
+
+git v2.39.1 [Approved]
+git package files install completed. Performing other installation steps.
+ The install of git was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\git'
+
+Chocolatey installed 2/2 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+C:\WINDOWS\system32>choco install -y terraform
+Chocolatey v1.2.1
+Installing the following packages:
+terraform
+By installing, you accept licenses for the packages.
+Progress: Downloading terraform 1.3.7... 100%
+
+terraform v1.3.7 [Approved]
+terraform package files install completed. Performing other installation steps.
+Removing old terraform plugins
+Downloading terraform 64 bit
+  from 'https://releases.hashicorp.com/terraform/1.3.7/terraform_1.3.7_windows_amd64.zip'
+Progress: 100% - Completed download of C:\Users\DELL\AppData\Local\Temp\chocolatey\terraform\1.3.7\terraform_1.3.7_windows_amd64.zip (18.75 MB).
+Download of terraform_1.3.7_windows_amd64.zip (18.75 MB) completed.
+Hashes match.
+Extracting C:\Users\DELL\AppData\Local\Temp\chocolatey\terraform\1.3.7\terraform_1.3.7_windows_amd64.zip to C:\ProgramData\chocolatey\lib\terraform\tools...
+C:\ProgramData\chocolatey\lib\terraform\tools
+ ShimGen has successfully created a shim for terraform.exe
+ The install of terraform was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\terraform\tools'
+
+Chocolatey installed 1/1 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+C:\WINDOWS\system32>refreshenv
+Refreshing environment variables from registry for cmd.exe. Please wait...Finished..
+
+C:\WINDOWS\system32>bash
+
+DELL@DESKTOP-2E2KAPR  /c/WINDOWS/system32
+$ cd ~
+
+DELL@DESKTOP-2E2KAPR  ~
+$
+
+DELL@DESKTOP-2E2KAPR  ~
+$ mkdir devops
+
+DELL@DESKTOP-2E2KAPR  ~
+$ cd devops
+
+DELL@DESKTOP-2E2KAPR  ~/devops
+$ mkdir provision release coding
+
+DELL@DESKTOP-2E2KAPR  ~/devops
+$ cd release
+
+DELL@DESKTOP-2E2KAPR  ~/devops/release
+$ mkdir git gitlab jenkins tomcat nagios
+
+DELL@DESKTOP-2E2KAPR  ~/devops/release
+$ cd ..
+
+DELL@DESKTOP-2E2KAPR  ~/devops
+$ cd coding
+
+DELL@DESKTOP-2E2KAPR  ~/devops/coding
+$ mkdir puppet chef ansible terraform
+
+DELL@DESKTOP-2E2KAPR  ~/devops/coding
+$ cd puppet
+
+DELL@DESKTOP-2E2KAPR  ~/devops/coding/puppet
+$ mkdir puppetserver puppetnode
+
+DELL@DESKTOP-2E2KAPR  ~/devops/coding/puppet
+$ cd ..
+
+DELL@DESKTOP-2E2KAPR  ~/devops/coding
+$ cd chef
+
+DELL@DESKTOP-2E2KAPR  ~/devops/coding/chef
+$ mkdir chefserver chefworkstation chefnode
+
+DELL@DESKTOP-2E2KAPR  ~/devops/coding/chef
+$ cd ..
+
+DELL@DESKTOP-2E2KAPR  ~/devops/coding
+$ cd ..
+
+DELL@DESKTOP-2E2KAPR  ~/devops
+$ cd provision
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision
+$ mkdir vagrant docker kubernetes
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision
+$ cd vagrant
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant
+$ mkdir centos ubuntu
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant
+$ cd centos
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant/centos
+$ vagrant init centos/7
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant/centos
+$ vagrant up && vagrant halt
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'centos/7' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Loading metadata for box 'centos/7'
+    default: URL: https://vagrantcloud.com/centos/7
+==> default: Adding box 'centos/7' (v2004.01) for provider: virtualbox
+    default: Downloading: https://vagrantcloud.com/centos/boxes/7/versions/2004.01/providers/virtualbox.box
+Download redirected to host: cloud.centos.org
+    default:
+    default: Calculating and comparing box checksum...
+==> default: Successfully added box 'centos/7' (v2004.01) for 'virtualbox'!
+==> default: Importing base box 'centos/7'...
+==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'centos/7' version '2004.01' is up to date...
+==> default: Setting the name of the VM: centos_default_1675189731763_3595
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default:
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: No guest additions were detected on the base box for this VM! Guest
+    default: additions are required for forwarded ports, shared folders, host only
+    default: networking, and more. If SSH fails on this machine, please install
+    default: the guest additions and repackage the box to continue.
+    default:
+    default: This is not an error message; everything may continue to work properly,
+    default: in which case you may ignore this message.
+==> default: Rsyncing folder: /cygdrive/c/Users/DELL/devops/provision/vagrant/centos/ => /vagrant
+==> default: Attempting graceful shutdown of VM...
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant/centos
+$ cd ../ubuntu
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant/ubuntu
+$ vagrant init ubuntu/xenial64
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant/ubuntu
+$ vagrant up && vagrant halt
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'ubuntu/xenial64' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Loading metadata for box 'ubuntu/xenial64'
+    default: URL: https://vagrantcloud.com/ubuntu/xenial64
+==> default: Adding box 'ubuntu/xenial64' (v20211001.0.0) for provider: virtualbox
+    default: Downloading: https://vagrantcloud.com/ubuntu/boxes/xenial64/versions/20211001.0.0/providers/virtualbox.box
+Download redirected to host: cloud-images.ubuntu.com
+    default:
+==> default: Successfully added box 'ubuntu/xenial64' (v20211001.0.0) for 'virtualbox'!
+==> default: Importing base box 'ubuntu/xenial64'...
+==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'ubuntu/xenial64' version '20211001.0.0' is up to date...
+==> default: Setting the name of the VM: ubuntu_default_1675189925109_83423
+Vagrant is currently configured to create VirtualBox synced folders with
+the `SharedFoldersEnableSymlinksCreate` option enabled. If the Vagrant
+guest is not trusted, you may want to disable this option. For more
+information on this option, please refer to the VirtualBox manual:
+
+  https://www.virtualbox.org/manual/ch04.html#sharedfolders
+
+This option can be disabled globally with an environment variable:
+
+  VAGRANT_DISABLE_VBOXSYMLINKCREATE=1
+
+or on a per folder basis within the Vagrantfile:
+
+  config.vm.synced_folder '/host/path', '/guest/path', SharedFoldersEnableSymlinksCreate: false
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 (guest) => 2222 (host) (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection reset. Retrying...
+    default: Warning: Connection aborted. Retrying...
+    default: Warning: Remote connection disconnect. Retrying...
+    default:
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 5.1.38
+    default: VirtualBox Version: 7.0
+==> default: Mounting shared folders...
+    default: /vagrant => C:/Users/DELL/devops/provision/vagrant/ubuntu
+==> default: Attempting graceful shutdown of VM...
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant/ubuntu
+$ echo "Lab Setup Complete"
+Lab Setup Complete
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant/ubuntu
+$
+
+DELL@DESKTOP-2E2KAPR  ~/devops/provision/vagrant/ubuntu
+$ exit
+exit
+
+C:\WINDOWS\system32>cd c:\users
+
+c:\Users>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8430-FEA2
+
+ Directory of c:\Users
+
+07-10-2022  15:58    <DIR>          .
+07-10-2022  15:58    <DIR>          ..
+31-01-2023  23:55    <DIR>          DELL
+08-10-2022  05:14    <DIR>          Public
+               0 File(s)              0 bytes
+               4 Dir(s)  42,804,174,848 bytes free
+
+c:\Users>whoami
+desktop-2e2kapr\dell
+
+c:\Users>cd dell
+
+c:\Users\DELL>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 8430-FEA2
+
+ Directory of c:\Users\DELL
+
+31-01-2023  23:55    <DIR>          .
+31-01-2023  23:55    <DIR>          ..
+11-12-2022  12:30    <DIR>          .android
+01-02-2023  00:04               591 .bash_history
+05-12-2022  08:42    <DIR>          .ssh
+01-02-2023  00:03    <DIR>          .vagrant.d
+01-02-2023  00:02    <DIR>          .VirtualBox
+07-10-2022  16:28    <DIR>          3D Objects
+07-10-2022  16:28    <DIR>          Contacts
+31-01-2023  23:50    <DIR>          Desktop
+31-01-2023  23:56    <DIR>          devops
+29-01-2023  17:20    <DIR>          Documents
+31-01-2023  23:11    <DIR>          Downloads
+07-10-2022  16:28    <DIR>          Favorites
+08-01-2023  00:11                18 file2.txt
+07-01-2023  23:59                70 filee1.txt
+07-10-2022  16:28    <DIR>          Links
+07-10-2022  13:02    <DIR>          Music
+31-01-2023  22:55    <DIR>          OneDrive
+14-01-2023  01:13    <DIR>          Pictures
+07-10-2022  16:28    <DIR>          Saved Games
+07-10-2022  16:28    <DIR>          Searches
+08-01-2023  00:10    <DIR>          Videos
+01-02-2023  00:02    <DIR>          VirtualBox VMs
+               3 File(s)            679 bytes
+              21 Dir(s)  42,804,105,216 bytes free
+
+c:\Users\DELL>tree devops
+Folder PATH listing
+Volume serial number is 0000006E 8430:FEA2
+C:\USERS\DELL\DEVOPS
++---coding
+¦   +---ansible
+¦   +---chef
+¦   ¦   +---chefnode
+¦   ¦   +---chefserver
+¦   ¦   +---chefworkstation
+¦   +---puppet
+¦   ¦   +---puppetnode
+¦   ¦   +---puppetserver
+¦   +---terraform
++---provision
+¦   +---docker
+¦   +---kubernetes
+¦   +---vagrant
+¦       +---centos
+¦       ¦   +---.vagrant
+¦       ¦       +---machines
+¦       ¦       ¦   +---default
+¦       ¦       ¦       +---virtualbox
+¦       ¦       +---rgloader
+¦       +---ubuntu
+¦           +---.vagrant
+¦               +---machines
+¦               ¦   +---default
+¦               ¦       +---virtualbox
+¦               +---rgloader
++---release
+    +---git
+    +---gitlab
+    +---jenkins
+    +---nagios
+    +---tomcat
+
+c:\Users\DELL>
